@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <span class="logo"><a href="index.html">WebStudio</a></span>
-        <ul>
+        <a class="logo" href="index.html" lang="en"
+          >Web<span class="logo-studio-black">Studio</span></a
+        >
+        <ul class="navigation">
           <li>
-            <a href="index.html">Studio</a>
+            <a href="./index.html" class="link current">Studio</a>
           </li>
           <li>
-            <a href="portofolio.html">Portofolio</a>
+            <a href="./portofolio.html" class="link">Portofolio</a>
           </li>
           <li>
-            <a href="#/contacts">Contacts</a>
+            <a href="#contacts" class="link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts-header">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
         <li>
-          <a href="tel:+12127724150">+1 212-772-4150</a>
+          <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button">Request our service</button>
+      <section class="hero">
+        <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <button class="req-service" type="button">Request our service</button>
       </section>
-      <section>
-        <div>
-          <ul>
-            <li>
-              <h5>ATTENTION TO DETAILS</h5>
-              <p>
-                We go into all the details and processes of your business to
-                develop a customized solution.
-              </p>
-            </li>
-            <li>
-              <h5>PUNCTUALITY</h5>
-              <p>
-                With us, you can feel safe and secure. An important principle of
-                the company: respect your time and deadlines.
-              </p>
-            </li>
-            <li>
-              <h5>PLANNING</h5>
-              <p>
-                You will be able to observe and participate in every phase of
-                solution development and implementation.
-              </p>
-            </li>
-            <li>
-              <h5>MODERN TECHNOLOGIES</h5>
-              <p>
-                We use innovative tools to solve assigned tasks. It's time to
-                simplify work processes.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>What we do</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/workdesk1.jpg"
-                alt="office image"
-                width="370"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/workdesk2.jpg"
-                alt="office image"
-                width="370"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/workdesk3.jpg"
-                alt="office image"
-                width="370"
-              />
-            </li>
-          </ul>
-        </div>
+      <section class="about-us-section">
+        <h2 class="hidden-title">About us</h2>
+        <ul class="about-us-list">
+          <li>
+            <h3 class="about-us-title">ATTENTION TO DETAILS</h3>
+            <p class="about-us-text">
+              We go into all the details and processes of your business to
+              develop a customized solution.
+            </p>
+          </li>
+          <li>
+            <h3 class="about-us-title">PUNCTUALITY</h3>
+            <p class="about-us-text">
+              With us, you can feel safe and secure. An important principle of
+              the company: respect your time and deadlines.
+            </p>
+          </li>
+          <li>
+            <h3 class="about-us-title">PLANNING</h3>
+            <p class="about-us-text">
+              You will be able to observe and participate in every phase of
+              solution development and implementation.
+            </p>
+          </li>
+          <li>
+            <h3 class="about-us-title">MODERN TECHNOLOGIES</h3>
+            <p class="about-us-text">
+              We use innovative tools to solve assigned tasks. It's time to
+              simplify work processes.
+            </p>
+          </li>
+        </ul>
       </section>
-      <section>
-        <h2>Our team</h2>
-        <ul>
+      <section class="secondary-section">
+        <h2 class="title">What we do</h2>
+        <ul class="secondary-list">
+          <li>
+            <img src="./images/workdesk1.jpg" alt="office image" width="370" />
+          </li>
+          <li>
+            <img src="./images/workdesk2.jpg" alt="office image" width="370" />
+          </li>
+          <li>
+            <img src="./images/workdesk3.jpg" alt="office image" width="370" />
+          </li>
+        </ul>
+      </section>
+      <section class="team-member">
+        <h2 class="title">Our team</h2>
+        <ul class="team-list">
           <li>
             <img
               src="./images/team/cwalker.jpg"
               alt="Christopher Walker"
               width="270"
             />
-            <h5>Christopher Walker</h5>
-            <p>Product Designer</p>
+            <h3 class="team-member-title">Christopher Walker</h3>
+            <p class="sub-title">Product Designer</p>
           </li>
           <li>
             <img src="./images/team/kevans.jpg" alt="Kylie Evans" width="270" />
-            <h5>Kylie Evans</h5>
-            <p>Frontend Developer</p>
+            <h3 class="team-member-title">Kylie Evans</h3>
+            <p class="sub-title">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -116,26 +115,34 @@
               alt="Ryan Harris"
               width="270"
             />
-            <h5>Ryan Harris</h5>
-            <p>Marketing</p>
+            <h3 class="team-member-title">Ryan Harris</h3>
+            <p class="sub-title">Marketing</p>
           </li>
           <li>
             <img src="./images/team/tmoore.jpg" alt="Tyler Moore" width="270" />
-            <h5>Tyler Moore</h5>
-            <p>UI Designer</p>
+            <h3 class="team-member-title">Tyler Moore</h3>
+            <p class="sub-title">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <span class="logo"><a href="index.html">WebStudio</a></span>
-      <address>
-        <a href="https://goo.gl/maps/PjCXunD42sFeRiASA" target="_blank">
-          <p>695 Park Ave, NY 10065, USA</p>
-        </a>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a href="tel:+12127724150">+1 212-772-4150</a>
-      </address>
+    <footer class="contacts" id="contacts">
+      <a class="logo" href="index.html" lang="en"
+        >Web<span class="logo-studio-white">Studio</span></a
+      >
+      <ul class="contacts-footer">
+        <li>
+          <address>695 Park Ave, NY 10065, USA</address>
+        </li>
+        <li>
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contact" href="tel:+12127724150">+1 212-772-4150</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

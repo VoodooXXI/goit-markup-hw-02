@@ -1,110 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <!--navigation-->
       <nav>
-        <span class="logo"><a href="index.html">WebStudio</a></span>
-        <ul>
+        <a class="logo" href="index.html" lang="en"
+          >Web<span class="logo-studio-black">Studio</span></a
+        >
+        <ul class="navigation">
           <li>
-            <a href="index.html">Studio</a>
+            <a href="./index.html" class="link">Studio</a>
           </li>
           <li>
-            <a href="portofolio.html">Portofolio</a>
+            <a href="./portfolio.html" class="link current">Portofolio</a>
           </li>
           <li>
-            <a href="#/contacts">Contacts</a>
+            <a href="#contacts" class="link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <!--header contacts-->
+      <ul class="contacts-header">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
         <li>
-          <a href="tel:+12127724150">+1 212-772-4150</a>
+          <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
+
     <main>
-      <!--aici este continutul principal al paginii-->
-      <div><ul>
-        <li><button>All</button></li>
-        <li><button>Web-sites</button></li>
-        <li><button>Apps</button></li>
-        <li><button>Designs</button></li>
-        <li><button>Marketing</button></li>
+      <section>
+        <h1 class="hidden-title">Our job</h1>
+        <ul class="submenu-buttons">
+          <li><button>All</button></li>
+          <li><button>Web-sites</button></li>
+          <li><button>Apps</button></li>
+          <li><button>Design</button></li>
+          <li><button>Marketing</button></li>
+        </ul>
+        <h2 class="hidden-title">Our Work</h2>
+
+        <ul class="submenu-images">
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/technoduck.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Technoduck</h3>
+              <p class="submenu-text">Web-site</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/allstars.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Poster New Orlean vs Golden Star</h3>
+              <p class="submenu-text">Design</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/restaurants.jpg"
+                width="370"
+                height="294"
+                alt="submenu-text"
+              />
+              <h3>Seafood restaurant</h3>
+              <p class="submenu-text">Apps</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/headphones.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Project Prime</h3>
+              <p class="submenu-text">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/boxes.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Project Boxes</h3>
+              <p class="submenu-text">Apps</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/inspiration.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Inspiration has no Borders</h3>
+              <p class="submenu-text">Web-site</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/ledition.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Limited Edition</h3>
+              <p class="submenu-text">Design</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/projectlab.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Project Lab</h3>
+              <p class="submenu-text">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="./images/pportofolio/bigbusiness.jpg"
+                width="370"
+                height="294"
+                alt="Image sample"
+              />
+              <h3>Growing Business</h3>
+              <p class="submenu-text">Apps</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="contacts" id="contacts">
+      <a class="logo" href="index.html" lang="en"
+        >Web<span class="logo-studio-white">Studio</span></a
+      >
+      <ul class="contacts-footer">
+        <li>
+          <address>695 Park Ave, NY 10065, USA</address>
+        </li>
+        <li>
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contact" href="tel:+12127724150">+1 212-772-4150</a>
+        </li>
       </ul>
-    </div>
-<div>
-  <ul>
-    <li>
-    <img src="./images/pportofolio/technoduck.jpg" alt="#" >    
-    </img>
-    <h5>Technoduck</h5>
-    <p>Web-site</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/allstars.jpg" alt="#" >    
-    </img>
-    <h5>Poster New Orleans vs Golden Star</h5>
-    <p>Design</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/restaurants.jpg" alt="#" >    
-    </img>
-    <h5>Seafood Restauran</h5>
-    <p>Apps</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/headphones.jpg" alt="#" >    
-    </img>
-    <h5>Project Prime</h5>
-    <p>Marketing</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/boxes.jpg" alt="#" >    
-    </img>
-    <h5>Project Boxes</h5>
-    <p>Apps</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/inspiration.jpg" alt="#" >    
-    </img>
-    <h5>Inspiration has no Borders</h5>
-    <p>Web-site</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/ledition.jpg" alt="#"></img>
-      <h5>Limited Edition</h5>
-    <p>Design</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/projectlab.jpg" alt="">
-  </img>
-    <h5>Project Lab</h5>
-    <p>Marketing</p>
-  </li>
-  <li>
-    <img src="./images/pportofolio/bigbusiness.jpg" alt="#" >    
-    </img>
-    <h5>Growing Business</h5>
-    <p>Apps</p>
-  </li>
-</ul>
-</div>
-</main>
-    <footer>
-      <span class="logo"><a href="index.html">WebStudio</a></span>
-      <address>
-        <a href="https://goo.gl/maps/PjCXunD42sFeRiASA" target="_blank">
-          <p>695 Park Ave, NY 10065, USA</p>
-        </a>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a href="tel:+12127724150">+1 212-772-4150</a>
-      </address>
     </footer>
   </body>
 </html>
